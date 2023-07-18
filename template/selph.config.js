@@ -2,6 +2,8 @@ const config = {
     name: '',
     apiPort: 5000,
     https: false,
+    dbPort: 2718,
+    dbName: '',
     modules: [
         {
             name: 'test',
