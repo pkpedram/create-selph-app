@@ -9,7 +9,6 @@ const fs = require('fs-extra')
           "@testing-library/jest-dom": "^5.16.5",
           "@testing-library/react": "^13.4.0",
           "@testing-library/user-event": "^13.5.0",
-          "@types/three": "^0.149.0",
           "axios": "^1.1.2",
           "react": "^18.2.0",
           "react-dom": "^18.2.0",
@@ -35,7 +34,7 @@ const fs = require('fs-extra')
           "workbox-streams": "^6.5.4"
         },
         "scripts": {
-          "start": "PORT=4321  react-scripts start",
+          "start": "react-scripts start",
           "build": "react-scripts build",
           "test": "react-scripts test",
           "eject": "react-scripts eject"
@@ -73,12 +72,11 @@ const fs = require('fs-extra')
     "description": "",
     "main": "index.js",
     "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1",
       "start": "node src/app.js",
       "dev": "nodemon src/app.js",
       "createsuperuser": "node src/core/generators/createsuperuse.js"
     },
-    "author": "NOAV_DEV_TEAM",
+    "author": "",
     "license": "ISC",
     "dependencies": {
       "body-parser": "^1.20.2",

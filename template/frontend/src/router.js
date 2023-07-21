@@ -2,13 +2,14 @@ import React from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { connect } from 'react-redux'
 import Layout from './layout'
+import HelloWorldPage from './views/HelloWorld'
 
 const CostumeRouter = ({}) => {
 
   let routes = [
     {
-      path: '/',
-      element: <></>
+      path: '*',
+      element: <HelloWorldPage />
     }
   ]
 

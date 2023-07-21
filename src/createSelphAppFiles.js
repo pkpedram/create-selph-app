@@ -8,9 +8,11 @@ const fs = require('fs-extra')
         "description": "",
         "main": "",
         "scripts": {
-          "test": "echo \"Error: no test specified\" && exit 1",
+          "dev": "selph-cli dev",  
           "start": "selph-cli start",
-          "start-frontend" : "selph-cli start-frontend"
+          "start-frontend" : "selph-cli start-frontend",
+          "start-backend" : "selph-cli start-backend",
+          "build" : "selph-cli build"
         },
         "author": "",
         "license": "ISC",
@@ -18,28 +20,36 @@ const fs = require('fs-extra')
           "selph-cli": "^1.0.0"
         }
       }`)
-      fs.writeFileSync(`${name}/selph.config.js`, `const config = {
-        name: '${name}',
-        apiPort: 5000,
-        https: false,
-        modules: [
+      fs.writeFileSync(`${name}/selph.config.json`, `{
+        "name": "${name}",
+        "apiPort": 5000,
+        "https": false,
+        
+        "modules": [
             {
-                name: 'test',
-                model: {
-                    title: String,
-                    link: {type: String},
-                    stepNumber: {type: Number, default: 0}
+                "name": "test",
+                "model": {
+                    "title": "String",
+                    "link": {"type": "String"},
+                    "stepNumber": {"type": "Number", "default": 0}
+                }
+            },
+            {
+                "name": "foreignKeyTest",
+                "model": {
+                    "test": "test",
+                    "testByType": {"type": "test"}
                 }
             }
         ],
-        baseModel: {
-            isActive: {type: Boolean, default: true},
-            created_date: {type: Date, default: new Date()}
+        "baseModel": {
+            "isActive": {"type": "Boolean", "default": true},
+            "created_date": {"type": "Date", "default": "new Date()"}
         }
     }
-    
-    module.exports = config
+
     `)
+
 }
 
 

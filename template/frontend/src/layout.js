@@ -2,7 +2,7 @@ import React from 'react'
 
 const Layout = ({children}) => {
   return (
-    <div>
+    <div className='w-full min-h-screen bg-selphDark'>
         {children}
     </div>
   )

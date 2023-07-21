@@ -18,6 +18,14 @@ const main = () => {
   fs.copySync(path.join(__dirname + "/template"), `${name}`);
 };
 
+const finishUp = () => {
+  console.log(`🟥 Selph - installing Selph deps`)
+  cp.execSync(`cd ${name} && npm i selph-cli@latest`, {stdio: 'inherit'})
+  cp.execSync(`cd ${name}/backend && npm i`, {stdio: 'inherit'})
+  cp.execSync(`cd ${name}/frontend && npm i`, {stdio: 'inherit'})
+  console.log(`🟥 Selph - Your Selph App is ready to use!`)
+}
+
 
 const promision = new Promise((resolve, reject) => {
   resolve();
@@ -27,6 +35,7 @@ promision
   .then(main())
   .then(createFrontPackageJson(name))
   .then(createBackendPackageJson(name))
-  .then(createSelphAppFiles(name));
+  .then(createSelphAppFiles(name))
+  .then(finishUp());
 
 process.exit();
