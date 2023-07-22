@@ -90,7 +90,8 @@ const fs = require('fs-extra')
       "multer": "^1.4.5-lts.1",
       "nodemon": "^2.0.22",
       "path": "^0.12.7",
-      "prompt-sync": "^4.2.0"
+      "prompt-sync": "^4.2.0",
+      "swagger-ui-express": "^5.0.0"
     }
   }
   `)
