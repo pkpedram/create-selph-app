@@ -1,6 +1,6 @@
 # Create-Selph-App
 
-<div align="center"><img style="width:200px" src="./logo.svg" alt="Selph logo"/></div>
+<div align="center"><img style="width:350px" src="./logo.svg" alt="Selph logo"/></div>
 
 Having a hard Time becoming a **MERN Stack developer**? with **Selph** you only need to **configure one file!**
 
