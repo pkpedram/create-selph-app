@@ -1,8 +1,9 @@
 # Create-Selph-App
+Having a hard Time becoming a **MERN Stack developer**? with **Selph** you only need to **configure one file!**
 
 <div align="center"><img style="width:350px" src="./logo.svg" alt="Selph logo"/></div>
 
-Having a hard Time becoming a **MERN Stack developer**? with **Selph** you only need to **configure one file!**
+
 
 # Installation
 **Create-selph-app** is now available on npx! just run the command below in a directory in your computer.
@@ -24,6 +25,21 @@ or if you want to use it as a npm global package:
 
 as you may know most of the projects needs a full-stack developer or two developers for each stack!
 but with **Selph** you just type what you want from the backend in the **selph.config.json** and it generates it for you! and it also gives you the code to you to explore in it!
+
+## Commands
+
+> Note: you sould only work with these commands
+
+go to the app directory and use these commands:
+
+    
+    npm start /* Starts both your backend and frontend */
+    
+    npm run dev /* starts dev version of both your backend and frontend */
+    
+    npm run start-frontend /* Starts your frontend */
+    
+    npm run start-backend /* Starts your backend */
 
 ## Usage
 
