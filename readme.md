@@ -1,7 +1,8 @@
 # Create-Selph-App
 
-<div align="center"><img src="./logo.svg" alt="Selph logo"/></div>
+<div align="center"><img style="width:200px" src="./logo.svg" alt="Selph logo"/></div>
 
+Having a hard Time becoming a **MERN Stack developer**? with **Selph** you only need to **configure one file!**
 
 # Installation
 **Create-selph-app** is now available on npx! just run the command below in a directory in your computer.
