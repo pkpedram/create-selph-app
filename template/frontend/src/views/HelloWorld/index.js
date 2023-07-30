@@ -11,7 +11,7 @@ const HelloWorldPage = () => {
                 <img src={logo} className='w-1/4 animate-bounce' />
                 <p className='text-white'>Having a hard time to become a Full-Stack developer? With <span className='text-selphRed'>Selph</span> you only need to configure One file!</p>
             </div>
-            <a href='https://selph.noav.dev' className='text-selphRed'>View our documentation!</a>
+            <a href='https://www.npmjs.com/package/create-selph-app?activeTab=readme' className='text-selphRed'>View our documentation!</a>
         </div>
     </Layout>
   )

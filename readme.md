@@ -41,6 +41,8 @@ go to the app directory and use these commands:
     
     npm run start-backend /* Starts your backend */
 
+	npm run create-admin /* Creates super user for future permissions */
+
 ## Usage
 
 So as it was said before you only need to say what you want. So you need to declare your wanted modules and its data model.
@@ -86,7 +88,12 @@ first way:
     "property": {"type": "data type"},
     ...
     }
-    
+
+And when started by said commands, it will migrate itself and generates your wanted backend featuring the needed routes and methods (get list, get detail by id, post, put & delete):
+
+<div align="center"><img style="width:100%" src="./swagger.png" alt="Selph logo"/></div>
+
+
 ## Different data types
 
 |Data Type| default type  |
@@ -94,6 +101,7 @@ first way:
 |  String | String  |
 |  Number | any number value: 0, 1.23, etc.  |
 |  Date | "new Date(your date)"  |
+|  File | no defaults  |
 
 for now there are only these data types but we will update soon
 

@@ -1,6 +1,6 @@
 {
   "name": "create-selph-app",
-  "version": "1.21.13",
+  "version": "1.22.0",
   "description": "",
   "main": "index.js",
   "preferGlobal": true,

@@ -47,6 +47,9 @@ const createsuperuser = async () => {
 }
 
 let server = app.listen(2312, async () => {
-    await createsuperuser()
-    server.close()
+    if(await createsuperuser()){
+        server.close()
+        process.exit()
+       
+    }
 })
