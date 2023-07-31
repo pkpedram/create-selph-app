@@ -1,6 +1,6 @@
 {
   "name": "create-selph-app",
-  "version": "1.22.0",
+  "version": "1.22.12",
   "description": "",
   "main": "index.js",
   "preferGlobal": true,
@@ -15,10 +15,16 @@
     "type": "git",
     "url": "git+https://github.com/pkpedram/create-selph-app.git"
   },
-  "author": "Pedram Keshavarzi",
+  "author": {
+    "name": "Pedram Keshavarzi",
+    "email": "pkpedram80@gmail.com",
+    "url": "https://pedram.noav.dev"
+  },
+  "keywords": ["selph", "Selph", "MERN", "generate backend", "full-stack", "create-selph", "selphjs", "selph js"],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/pkpedram/create-selph-app/issues"
+    "url": "https://github.com/pkpedram/create-selph-app/issues",
+    "email": "pkpedram80@gmail.com"
   },
   "homepage": "https://github.com/pkpedram/create-selph-app#readme",
   "dependencies": {

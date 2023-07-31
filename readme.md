@@ -146,6 +146,50 @@ there is an optional selph config property in your **selph.config.json**:
     }
 
 *please note each property is optional.
+
+## Permissions
+
+you can set permissions to different methods of your module.
+
+> the "permissions" property and all of its attributes are optional.
+
+just set an array that contains types of permissions for each method like this:
+
+
+	{
+		...,
+		{
+			"name": "test",
+			"model": {...},
+			"permissions": {
+				"post": ["user"],
+				"getList": [], /* if you do not want to set any permission for a method set array to empty or don't type it */
+				"getDetail": ["user", "self"],
+				"put": ["self"],
+				"delete": ["self"]
+			}
+		}
+		...,
+	}
+
+**Different types of permission and its meaning:**
+|name| meaning  | description |
+|--|--|--|
+|  admin | a user created by **npm run create-admin**  | **no need to type this one, admin has all the permissions by default**|
+|  user | you need to be logged in to use the method  | - |
+|  self | only the creator of the object has the permission to the method  | **see the note below** |
+
+> NOTE: "self" permission is only for getDetail, put and delete and to make it work you must save the creator of any object for that you dont need to change your data model you just set saveCreatorUsers to true in your **selph.config.json** like this:
+
+	{
+		...,
+		"https": false,
+		"apiPort": <SOME_PORT>,
+		"saveCreatorUsers": true,
+		...,
+	}
+
+
 # Back-End Documentation
 
 there is a Swagger documentation for you to test your **generated back-end** on:
