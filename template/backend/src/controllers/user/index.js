@@ -44,7 +44,7 @@ const usersController = {
                 let user = await User.findOne({username: req.body.username, password: encrypt(req.body.password)})
                 console.log(user)
                 if(user?._id){
-                    let token = generateJwtToken({username: user.username, role: user.role})
+                    let token = generateJwtToken({username: user.username, role: user.role, userId: user.id})
                     return res.send({token: token})
                 }else{
                     res.sendStatus(404)
@@ -62,7 +62,7 @@ const usersController = {
                 let user = await User.findOne({username: req.body.username, password: encrypt(req.body.password)})
                 console.log(user)
                 if(user?._id && user?.role == 'admin'){
-                    let token = generateJwtToken({username: user.username, role: user.role})
+                    let token = generateJwtToken({username: user.username, role: user.role, userId: user.id})
                     return res.send({token: token})
                 }else{
                     res.sendStatus(404)
